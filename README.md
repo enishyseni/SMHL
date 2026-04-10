@@ -18,7 +18,7 @@ When you ask an AI to design a system, it usually gives you a lot of conversatio
 
 ---
 
-## 📖 The 3 Simple Rules of SMHL
+## The 3 Simple Rules of SMHL
 
 You only need to know three formats to read or write SMHL:
 
@@ -39,7 +39,7 @@ Group related things together.
 
 ---
 
-## 🛠️ How to use it (Copy & Paste)
+## How to use it (Copy & Paste)
 
 Want to force ChatGPT, Claude, or Gemini to use SMHL? Just copy and paste the text below into the AI's **System Prompt** or **Custom Instructions**.
 
