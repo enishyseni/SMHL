@@ -1,6 +1,6 @@
 # SMHL (Semantic Machine Human Language) 
 
-**Cut your AI API costs by ~60% by stopping the AI from talking too much.**
+**Cut your AI API costs by ~60%-75% by stopping the AI from talking too much.**
 
 SMHL is a simple, shorthand coding language for AI. Instead of letting the AI write paragraphs of conversational text (which costs you tokens and money), SMHL forces the AI to output pure, structured logic.
 
