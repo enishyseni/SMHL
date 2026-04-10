@@ -1,43 +1,62 @@
-# SMHL (Semantic Machine Human Language) 
+# SMHL (Semantic Machine Human Language)
 
-**Cut your AI API costs by ~60%-75% by stopping the AI from talking too much.**
+**Cut your AI API costs by 60%-70% by stopping the AI from talking too much.**
 
-SMHL is a simple, shorthand coding language for AI. Instead of letting the AI write paragraphs of conversational text (which costs you tokens and money), SMHL forces the AI to output pure, structured logic.
+SMHL is a simple, shorthand coding language for AI. Instead of letting the AI write paragraphs of conversational text (which costs you tokens, money, and time), SMHL forces the AI to output pure, structured logic.
 
 ## The Problem vs. The Solution
 
 When you ask an AI to design a system, it usually gives you a lot of conversational filler. 
 
-** Natural Language (Expensive & Slow - ~45 tokens)**
-> *"Certainly! The metal production facility uses a robotic arm for automated disassembly and a vision-based AI system for sorting lithium-ion batteries to ensure high efficiency and safety."*
+**Natural Language (Expensive & Slow - ~45 tokens)**
+> "Certainly! The metal production facility uses a robotic arm for automated disassembly and a vision-based AI system for sorting lithium batteries to ensure high efficiency and safety."
 
-** SMHL (Cheap & Fast - ~18 tokens)**
-> `Facility(Metal)|Process:Automated_Disassembly+AI_Sorting|Input:Li-Ion -> Output:Efficiency+Safety`
+**SMHL (Cheap, Fast, & Readable - ~19 tokens)**
+> `Facility(Metal) | Process : AutomatedDisassembly + AISorting | Input : Lithium -> Output : HighEfficiency + Safety`
 
-**The Result:** A ~60% reduction in token usage. You get the exact same technical information, but faster, cheaper, and in a format that other scripts and autonomous agents can actually read.
+**The Result:** A 60%-70% reduction in token usage. You get the exact same technical information, but faster, cheaper, and in a format that other scripts and autonomous agents can easily parse.
 
 ---
 
 ## The 3 Simple Rules of SMHL
 
-You only need to know three formats to read or write SMHL:
+You only need to know three formats to read or write SMHL. *(Note: Always use CamelCase and put spaces around symbols for maximum readability).*
 
 ### 1. Things (Nodes)
 Describe an object, what it is, and its current state.
-* **Format:** `Name(Type)|Attribute:Value`
-* **Example:** `Backend(NodeJS)|Status:Active`
+* **Format:** `Name(Type) | Attribute : Value`
+* **Example:** `Backend(NodeJS) | Status : Active`
 
 ### 2. Actions (Edges)
 Show how things connect or talk to each other.
-* **Format:** `Thing A -> Thing B: Action`
-* **Example:** `Frontend(React) -> Backend(NodeJS): Login_Request`
+* **Format:** `ThingA -> ThingB : Action`
+* **Example:** `Frontend(React) -> Backend(NodeJS) : LoginRequest`
 
 ### 3. Groups (Hierarchy)
 Group related things together.
-* **Format:** `# Group Name`
-* **Example:** `# Authentication System`
+* **Format:** `# GroupName`
+* **Example:** `# AuthenticationSystem`
 
 ---
+
+## The "Graph Bloat" Pitfall
+
+When an AI first learns SMHL, it sometimes gets too enthusiastic and tries to map *every single abstract concept* into its own node. This is called **Graph Bloat**, and it ruins your token savings. 
+
+SMHL is about **compression**, not just translation. 
+
+**Bad Example: Graph Bloat (Too many nodes)**
+```smhl
+# TrustDynamics
+Assumption(Deception) | State : Initial -> Perception(Reality) : Distorted
+Cognitive(ConfirmationBias) | Trigger : Suspicion -> Evidence : Filtered
+```
+
+**Good Example: High Density (Optimized)**
+```smhl
+# TrustDynamics
+Agent(Mindset) | Expectation : Deception -> Reality(Outcome) : ManifestDeception
+```
 
 ## How to use it (Copy & Paste)
 
